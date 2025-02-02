@@ -1,6 +1,6 @@
 YTAChunker
 
-🚀 1st Runner-Up at NMIMS Datathon 3.0 (2025) 🎉Developed by Your Name, Teammate 1, Teammate 2, and Teammate 3
+🚀 1st Runner-Up at NMIMS Datathon 3.0 (2025) 🎉Developed by <a href="https://github.com/AdvaitDongre">Advait Dongre</a> , <a href="https://github.com/ParamVeerJain">Veer Jain</a> and <a href="https://github.com/PranaliChitre">Pranali Chitre</a>
 
 📌 Overview
 
@@ -22,25 +22,25 @@ Additionally, install the following external dependencies:
 
 FFmpeg (for audio processing)
 
-sudo apt install ffmpeg  # Linux
-brew install ffmpeg      # macOS
-choco install ffmpeg     # Windows (via Chocolatey)
+```sudo apt install ffmpeg  # Linux```
+```brew install ffmpeg      # macOS```
+```choco install ffmpeg     # Windows (via Chocolatey)```
 
 yt-dlp (for downloading YouTube videos)
 
-pip install yt-dlp
+```pip install yt-dlp```
 
 Ensure you have a Groq API key to use LLaMA-based features. Set it as an environment variable:
 
-export GROQ_API_KEY="your_api_key_here"
+```export GROQ_API_KEY="your_api_key_here"```
 
-(For Windows, use set GROQ_API_KEY="your_api_key_here" in Command Prompt.)
+(For Windows, use ```set GROQ_API_KEY="your_api_key_here"``` in Command Prompt.)
 
 🚀 Usage Guide
 
 1️⃣ Download YouTube Video & Extract Audio
 
-python app/utils/downloader.py --url "<YouTube Video URL>"
+```python app/utils/downloader.py --url "<YouTube Video URL>"```
 
 2️⃣ Segment Audio
 
@@ -48,39 +48,26 @@ Choose from different segmentation strategies:
 
 Whisper Chunking:
 
-python app/utils/whisper_chunking.py --audio temp/audio.wav
+```python app/utils/downloader.py --audio temp/audio.wav```
 
 Semantic Segmentation:
 
-python app/utils/semantic_audio_segmenter.py --audio temp/audio.wav
+```python app/utils/semantic_audio_segmenter.py --audio temp/audio.wav```
 
 3️⃣ Q&A and Summarization
 
 Run the LLaMA-powered Q&A module:
 
-python app/utils/groq_client.py --audio temp/audio.wav
+```python app/utils/groq_client.py --audio temp/audio.wav```
 
 Generate a summary of the extracted content:
 
-python app/utils/llama_segmenter.py --audio temp/audio.wav
-
-👨‍💻 Team Members
-
-Your Name
-
-Teammate 1
-
-Teammate 2
-
-Teammate 3
+```python app/utils/llama_segmenter.py --audio temp/audio.wav```
 
 🏆 Achievements
 
 🧈 1st Runner-Up at NMIMS Datathon 3.0 (2025)🚀 Recognized for cutting-edge AI-driven speech segmentation, Q&A and summarization features, and robust TypeScript integration.
 
-🐜 License
-
-This project is licensed under the MIT License.
 
 ⭐ If you found this project useful, don’t forget to star the repo! ⭐
 
