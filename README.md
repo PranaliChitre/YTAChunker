@@ -16,7 +16,7 @@ Prerequisites
 
 Ensure you have Python 3.8+ and a virtual environment set up. Install dependencies with:
 
-pip install -r requirements.txt
+"""pip install -r requirements.txt"""
 
 Additionally, install the following external dependencies:
 
